@@ -1,0 +1,19 @@
+import javax.swing.JOptionPane; 
+  public class ExThree { 
+    public static void main(String [] args)
+    { 
+      final double PROFIT_PERCENTAGE = .4; 
+      double userRetailPrice;
+      double companyProfit; 
+      String input; //String newLine = "\n"; 
+      input = JOptionPane.showInputDialog
+        ( "What is the retail price of your circuit board?"); 
+      
+      userRetailPrice = Double.parseDouble(input); 
+      companyProfit = PROFIT_PERCENTAGE * userRetailPrice; 
+      JOptionPane.showMessageDialog(null, "The profit earned is $" + companyProfit); 
+      
+      System.exit(0);
+    
+    }
+ }
