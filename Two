@@ -1,0 +1,22 @@
+import java.util.Scanner;  
+import javax.swing.JOptionPane;  
+import java.lang.*;
+
+public class ExTwo {
+public static void main(String []args)
+{
+  double num1,num2,num3,average;
+  String input = JOptionPane.showInputDialog(null, "Enter first number: ");
+  num1=Double.parseDouble(input);
+  
+  input = JOptionPane.showInputDialog(null, "Enter second number: ");
+  num2=Double.parseDouble(input);
+  
+  input = JOptionPane.showInputDialog(null, "Enter third number: ");
+  num3=Double.parseDouble(input);
+  average=(num1+num2+num3)/3;
+  
+  JOptionPane.showMessageDialog(null,"The test score average of "+num1+", "+num2+" and "+num3+" is "+average);
+
+    }
+}
