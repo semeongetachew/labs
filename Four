@@ -1,0 +1,25 @@
+import javax.swing.JOptionPane;  
+public class ExFour {
+    public static void main(String[] args)
+    {
+        double purchase,stateTax, countyTax, totalTax, totalSale,stateRate,countyRate;
+        String input;                                              
+        stateRate =0.04;                                       
+        countyRate =0.02;                                    
+       
+        input =JOptionPane.showInputDialog("How much is the amount of your purchase?");
+        purchase =Double.parseDouble(input);
+      
+         stateTax=purchase*stateRate;
+         countyTax=purchase*countyRate;
+         totalTax=countyTax+stateTax;
+        totalSale =purchase-totalTax;
+       
+       JOptionPane.showMessageDialog(null, "The amount of the purchase is $" 
+                                            + purchase + "\nThe amount of the state " + "tax is $" + stateTax+ 
+                                          "\n" + "The amount of the county tax is $" +countyTax       
+                                       + "\n" +"The total sales tax is $" + totalTax + "\n" + 
+                                     "The total of the sale is $" + totalSale);
+        System.exit(0);
+    }
+}
